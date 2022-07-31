@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const writeFile = require('./potential-enigma-main/Develop/src/page-template');
-const generatePage = require('./potential-enigma-main/Develop/utils/generateMarkdown.js');
+const writeFile = require('./Develop/src/page-template.js');
+const generatePage = require('./Develop/src/generateMarkdown.js');
 
 //project title, description, installation instructions, usage information, contribution guidelines, and test instructions
     //SECTIONS: Description, Installation, Usage, Contributing, and Tests
@@ -167,25 +167,13 @@ const repoQuestions = () => {
     ]);
 };
 
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if(err)
-            throw err;
-        console.log("Data transferred to Readme.md");
-    });
-}
-
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(repoQuestions()
-        .then(function (userResponse) {
-            console.log(userResponse)
-            writeToFile("README.md", generatePage(userResponse));
-        })
-)}
 
-// Function call to initialize app
-init();
+repoQuestions()
+    .then(pageExport => {
+        return generatePage(pageExport);
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse);
+        return writeFile(writeFileResponse);
+    })
