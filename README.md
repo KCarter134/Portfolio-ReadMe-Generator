@@ -1,4 +1,4 @@
-# asdf
+# Node Project
   ## Licensing:
   [![license](https://img.shields.io/badge/license-undefined)](https://shields.io)
   ## Table of Contents 
@@ -9,17 +9,20 @@
   - [Testing](#testing)
   - [Additional Info](#additional-info)
   ## Description:
-   - asdf
+   - Node project
   ## Installation:
-   - asdf
+   - description 
   ## Usage:
-   - asdf
+   - use it
   ## Contribution:
-   - asdf
+   - guidelines
   ## Testing:
-   - asdf
+   - test instructions
   ## License:
-   - MIT,IBM Public License Version 1.0,Apache 2.0 License,Eclipse Public License 1.0,Boost Software License 1.0
+   - MIT
   ## Additional Info:
   - Github: [undefined](https://github.com/undefined)
-  - Email: wer 
+  - Email: kcarter134@yahoo.com 
+
+
+Video LINK: https://drive.google.com/file/d/1pBeGDYhPawgeJs_zC48rb8Z3LHJv4s-4/view

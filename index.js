@@ -4,16 +4,7 @@ const fs = require('fs');
 const writeFile = require('./Develop/src/page-template.js');
 const generatePage = require('./Develop/src/generateMarkdown.js');
 
-//project title, description, installation instructions, usage information, contribution guidelines, and test instructions
-    //SECTIONS: Description, Installation, Usage, Contributing, and Tests
-//badge options + notice(LICENSE that explains which license it is
-//GitHub username + link
-    //SECTIONS: Questions
-//Email Address with instructions on how to reach me with additional questions
-    //SECTIONS: Questions
-//Links in Table of Contents
-
-// TODO: Create an array of questions for user input PROMPTUSER
+// TODO: Create an array of questions for user input
 const repoQuestions = () => {
     // if(!userData.projects) {
     //     userData.projects = [];
@@ -109,7 +100,8 @@ const repoQuestions = () => {
                 "Eclipse Public License 1.0",
                 "Boost Software License 1.0"
             ],
-            default:['MIT'],
+
+
         },
         {
             type: "input",
